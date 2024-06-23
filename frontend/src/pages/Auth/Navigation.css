@@ -1,0 +1,53 @@
+body {
+  overflow-x: hidden; 
+}
+
+#navigation-container {
+  width: 5%;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(135deg, #ff5525, #ff3281);
+}
+
+#navigation-container:hover {
+  width: 14%;
+}
+
+.nav-item-name {
+  display: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#navigation-container:hover .nav-item-name {
+  display: block;
+  opacity: 1;
+}
+
+.search-input {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#navigation-container:hover .search-input {
+  display: block;
+  opacity: 1;
+}
+
+#navigation-container:hover .search-icon {
+  display: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.main-content {
+  margin-left: 4%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+#navigation-container:hover + .main-content {
+  margin-left: 15%;
+}
